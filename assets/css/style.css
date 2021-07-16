@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Multicolore';
+  src: url('../fonts/multicolore.otf');
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: monospace;
+  background-color: rgb(248, 248, 248);
+}
+
+#container {
+  margin: 40px 0 0 40px;
+  width: fit-content;
+  min-width: 550px;
+  background: rgba(248, 248, 248, 0.05);
+  padding: 30px;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  zoom: 2;
+  max-width: 75%;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+#img {
+  width: 120px;
+  height: 120px;
+  background: url("../img/axolotl.gif");
+  background-size: cover;
+  margin-top: 10px;
+}
+
+#name {
+  font-size: 25px;
+  font-family: 'Multicolore';
+  padding-right: 70px;
+}
+
+#links {
+  margin-left: 15px;
+  margin-top: 10px;
+  border-left: 2px #363636 solid;
+  font-size: 14px;
+}
+
+#links>a {
+  display: table;
+  margin: 0 0 4px 10px;
+  color: #424242;
+  text-decoration: none;
+  transition: all .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#links>a:hover {
+  margin-left: 15px;
+}
+
+a:visited {
+  color: rgb(0, 0, 238);
+}
+
+#paper {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50%;
+  z-index: -999;
+}
+
+textarea {
+  display: block;
+  margin: 20px 0;
+  width: 325px;
+  height: 100px;
+  font-size: 12px;
+  resize: none;
+}
+
+button {
+  background-color: #424242;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.red {
+  background-color: #f44336;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
